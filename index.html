@@ -32,7 +32,7 @@ function formatDateTime() {
 async function getNextId() {
   const idRef = ref(db, 'contadores/ultimoId');
   const result = await runTransaction(idRef, current => {
-    return (current || 0) + 1;
+    return (current || 0) + 1000;
   });
   return String(result.snapshot.val()).padStart(5, '0');
 }
