@@ -169,6 +169,7 @@ function carregarContador() {
   const contadorRef = ref(db, 'contadores/ultimoId');
   onValue(contadorRef, snapshot => {
     const total = snapshot.val() || 0;
+    const total = total + 1000;
     document.getElementById('totalComandos').textContent = String(total).padStart(5, '0');
   });
 }
