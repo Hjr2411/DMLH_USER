@@ -247,12 +247,15 @@ th {
 }
 .csv-cell:hover {
   background-color: #f0f0f0;
-}
+
 #contadorComandos {
-  font-size: 12px;
+  font-size: 36px; /* Aumenta o tamanho da fonte */
   margin-bottom: 10px;
   color: #555;
+  font-family: 'Orbitron', 'Digital-7', 'Courier New', monospace; /* Fontes modernas/digitais */
+  font-weight: bold;
 }
+
 </style>
 </head>
 <body>
@@ -260,7 +263,7 @@ th {
 <h2>Gerenciador de Comandos DML</h2>
 
 <div id="contadorComandos">
- <h2> Total de comandos inseridos: <span id="totalComandos">00000</span><h2>
+  Total de comandos inseridos: <span id="totalComandos">00000</span>
 </div>
 
 <textarea id="comandoInput" placeholder="Cole aqui seus comandos DML (um por linha)..."></textarea>
